@@ -1,0 +1,12 @@
+body{
+    background: url("../img/background.jpg") no-repeat center 100%;
+}
+.btn-group.bootstrap-select{
+    width: 100% !important;
+}
+.panel-body{
+    padding: 25px 25px 0 25px
+}
+.panel {
+    background: rgba(255,255,255,0.4);
+}
