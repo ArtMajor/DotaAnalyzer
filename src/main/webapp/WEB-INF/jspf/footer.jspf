@@ -4,4 +4,3 @@
 <!-- Latest compiled and minified JavaScript Bootstrap select-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 <!-- My scripts -->
-<script src="js/loadDataAjax.js"></script>

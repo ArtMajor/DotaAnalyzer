@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span> <span class="icon-bar"></span> <span
                     class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/CourseSystem">Extra course</a>
+            <a class="navbar-brand" href="/DotaAnalyzer">DotaAnalyzer</a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-body">
             <c:if test="${not empty sessionUser}">
@@ -29,7 +29,8 @@
                                             key="navbar.courses.create_new" /></a></li>
                                 </c:when>
                             </c:choose>
-                        </ul></li>
+                        </ul>
+                    </li>
                 </ul>
             </c:if>
 

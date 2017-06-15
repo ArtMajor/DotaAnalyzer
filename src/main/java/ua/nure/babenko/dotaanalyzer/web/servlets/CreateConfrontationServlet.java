@@ -1,4 +1,4 @@
-package ua.nure.babenko.dotaanalyzer.servlets;
+package ua.nure.babenko.dotaanalyzer.web.servlets;
 
 import ua.nure.babenko.dotaanalyzer.constants.WebPath;
 

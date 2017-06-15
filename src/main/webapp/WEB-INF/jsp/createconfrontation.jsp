@@ -28,7 +28,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" name="percent" min="1" max="100">
+                            <input type="number" class="form-control" name="percent" min="0" max="100">
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary btn-block" value="Send"/>
@@ -40,5 +40,6 @@
     </div>
 </div>
 <%@include file="/WEB-INF/jspf/footer.jspf" %>
+<script src="js/loadDataAjax.js"></script>
 </body>
 </html>
