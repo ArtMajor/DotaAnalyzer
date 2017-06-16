@@ -3,7 +3,7 @@
 	====================================================================== -->
 <Context>
     <Resource
-            name = "jdbc/DotaAnalyzer"
+            name = "jdbc/dotaanalyzer"
             auth = "Container"
             type = "javax.sql.DataSource"
 
@@ -18,6 +18,6 @@
             defaultAutoCommit = "false"
             defaultTransactionIsolation="READ_COMMITTED"
 
-            url = "jdbc:mysql://localhost:3306/coursesystem?useSSL=true"
+            url = "jdbc:mysql://localhost:3306/dotaanalyzer?useSSL=true"
     />
 </Context>

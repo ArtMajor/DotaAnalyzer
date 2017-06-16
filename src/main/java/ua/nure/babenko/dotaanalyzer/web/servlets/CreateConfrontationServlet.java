@@ -1,6 +1,10 @@
 package ua.nure.babenko.dotaanalyzer.web.servlets;
 
+import ua.nure.babenko.dotaanalyzer.constants.Params;
 import ua.nure.babenko.dotaanalyzer.constants.WebPath;
+import ua.nure.babenko.dotaanalyzer.db.dto.ConfrontationMapper;
+import ua.nure.babenko.dotaanalyzer.db.entity.ConfrontationEntity;
+import ua.nure.babenko.dotaanalyzer.services.ConfrontationService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +15,13 @@ import java.io.IOException;
 
 @WebServlet(urlPatterns = "/createConfrontation")
 public class CreateConfrontationServlet extends HttpServlet {
+    private ConfrontationService confrontationService;
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+        confrontationService = (ConfrontationService)getServletContext().getAttribute(Params.CONFRONTATION_SERVICE);
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -19,6 +30,8 @@ public class CreateConfrontationServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        ConfrontationEntity confrontationEntity = new ConfrontationMapper().getConfrontation(req);
+        confrontationService.addConfrontation(confrontationEntity);
+        resp.sendRedirect("createConfrontation");
     }
 }

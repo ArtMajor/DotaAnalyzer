@@ -16,19 +16,19 @@
                     <h3 class="panel-title">Panel title</h3>
                 </div>
                 <div class="panel-body">
-                    <form action="createConfrontation" class="form-horizontal">
+                    <form action="createConfrontation" method="post" class="form-horizontal">
                         <div class="form-group">
-                            <select class="selectpicker" id="firstHero">
+                            <select class="selectpicker" name="firstHero" id="firstHero">
                                 <option selected disabled> Choose hero</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <select class="selectpicker" id="secondHero">
+                            <select class="selectpicker" name="secondHero" id="secondHero">
                                 <option selected disabled> Choose hero</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="number" class="form-control" name="percent" min="0" max="100">
+                            <input type="number" class="form-control" name="confrontation" min="0" max="100">
                         </div>
                         <div class="form-group">
                             <input type="submit" class="btn btn-primary btn-block" value="Send"/>
