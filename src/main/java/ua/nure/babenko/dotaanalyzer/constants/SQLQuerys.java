@@ -5,4 +5,5 @@ package ua.nure.babenko.dotaanalyzer.constants;
  */
 public class SQLQuerys {
     public static final String CREATE_CONTFRONTAION = "insert into heroconfrontations values(?,?,?)";
+    public static final String GET_ALL_CONFRONTATION = "select * from heroconfrontations";
 }

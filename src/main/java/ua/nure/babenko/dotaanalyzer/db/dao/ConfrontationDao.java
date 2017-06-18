@@ -11,6 +11,6 @@ public interface ConfrontationDao {
     int createConfrontation(ConfrontationEntity entity);
     boolean isConfrontationExist(ConfrontationEntity entity);
     boolean updateContforntation(ConfrontationEntity entity);
-    List<ConfrontationEntity> getConfrontationByHeroId();
+    List<ConfrontationEntity> getAllConfrontation();
 
 }
