@@ -1,6 +1,8 @@
 <%@include file="/WEB-INF/jspf/page.jspf"%>
 <%@include file="/WEB-INF/jspf/taglib.jspf"%>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="my"%>
+<fmt:setLocale value="${locale}"/>
+<fmt:bundle basename="i18n">
 <html>
 <c:set var="pageTitle" value="auth_page.title" scope="page" />
 <head>
@@ -33,7 +35,7 @@
 							<label for="mail" class="col-sm-4 control-label"><fmt:message
 									key="db.user.mail" />:</label>
 							<div class="col-sm-7">
-								<input type="text" class="form-control" id="mail" name="mail" placeholder="Email">
+								<input type="text" class="form-control" id="mail" name="mail" placeholder="Login">
 								<c:if test="${not empty requestScope.loginErrors.login}">
 									<p class="text-danger">
 										<fmt:message key="messages.${requestScope.signInErrors.mail}" />
@@ -78,5 +80,7 @@
 			</div>
 		</div>
 	</div>
+<%@include file="/WEB-INF/jspf/footer.jspf"%>
 </body>
 	</html>
+</fmt:bundle>

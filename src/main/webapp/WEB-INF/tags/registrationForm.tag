@@ -76,31 +76,6 @@
 		</div>
 	</div>
 
-
-
-	<!-- Select field -->
-	<div class="form-group">
-		<label for="roles" class="col-sm-3 control-label"><fmt:message
-				key="reg_page.reg_as" /></label>
-		<div class="checkbox col-sm-7">
-			<Select class="form-control" name="role" id="roles">
-				<c:forEach items="${regRoles}" var="regRole">
-					<option value="${regRole}"><fmt:message key="db.roles.${regRole}"/></option>
-				</c:forEach>
-			</Select>
-		</div>
-	</div>
-
-	<!-- File input -->
-	<div class="form-group">
-		<label class="col-sm-3 control-label"><fmt:message
-				key="db.user.avatar" />:</label> <input class="col-sm-8" type="file"
-			accept="image/jpeg,image/png">
-	</div>
-
-
-
-
 	<!-- Submit button -->
 	<div class="form-group">
 		<div class="col-sm-4 col-sm-offset-3">

@@ -19,7 +19,7 @@
 
 
                     <li class="dropdown"><a href="#" class="dropdown-toggle"
-                                            data-toggle="dropdown">Courses</a>
+                                            data-toggle="dropdown">Confrontations</a>
                         <ul class="dropdown-menu">
                             <li><a href="courses.do"><fmt:message
                                     key="navbar.courses.view_all" /></a></li>
@@ -37,20 +37,23 @@
 
             <div class="nav navbar-right">
                 <ul class="nav navbar-nav">
-                        <li><a href="signIn.do"> <span
-                                class="glyphicon glyphicon-log-in"></span> Sign in
+                        <li><a href="/authorization"> <span
+                                class="glyphicon glyphicon-log-in"></span> <fmt:message key="navbar.sign_in" />
                         </a></li>
+                    <li><a href="/registration"> <span
+                            class="glyphicon glyphicon-log-in"></span> <fmt:message key="navbar.sign_up" />
+                    </a></li>
                     <li class="dropdown"><a href="#" class="dropdown-toggle"
-                                            data-toggle="dropdown">Language
+                                            data-toggle="dropdown"><fmt:message key="navbar.language" />
                         <span class="caret"></span>
                     </a>
                         <ul class="dropdown-menu">
                             <li><a
-                                    href="${requestScope['javax.servlet.forward.request_uri']}?lang=en">English</a></li>
+                                    href="${requestScope['javax.servlet.forward.request_uri']}?lang=en"><fmt:message key="navbar.languages.en" /></a></li>
                             <li><a
-                                    href="${requestScope['javax.servlet.forward.request_uri']}?lang=ru">Russian</a></li>
+                                    href="${requestScope['javax.servlet.forward.request_uri']}?lang=ru"><fmt:message key="navbar.languages.ru" /></a></li>
                             <li><a
-                                    href="${requestScope['javax.servlet.forward.request_uri']}?lang=uk">Ukrainian</a></li>
+                                    href="${requestScope['javax.servlet.forward.request_uri']}?lang=uk"><fmt:message key="navbar.languages.uk" /></a></li>
                         </ul></li>
                 </ul>
             </div>

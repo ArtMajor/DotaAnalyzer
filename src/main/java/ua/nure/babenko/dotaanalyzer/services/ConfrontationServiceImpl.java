@@ -6,14 +6,12 @@ import ua.nure.babenko.dotaanalyzer.db.entity.ConfrontationEntity;
 
 import java.util.List;
 
-/**
- * Created by fomenko on 16.06.2017.
- */
-public class ConfrontaionServiceImpl implements ConfrontationService {
+
+public class ConfrontationServiceImpl implements ConfrontationService {
     private ConfrontationDao confrontationDao;
     private TransactionManager transactionManager;
 
-    public ConfrontaionServiceImpl(ConfrontationDao confrontationDao, TransactionManager transactionManager) {
+    public ConfrontationServiceImpl(ConfrontationDao confrontationDao, TransactionManager transactionManager) {
         this.transactionManager = transactionManager;
         this.confrontationDao = confrontationDao;
     }

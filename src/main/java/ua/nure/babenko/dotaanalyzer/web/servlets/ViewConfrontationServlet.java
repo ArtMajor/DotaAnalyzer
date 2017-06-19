@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created by fomenko on 16.06.2017.
- */
+
 @WebServlet(name = "ViewConfrontationServlet", urlPatterns = "/view")
 public class ViewConfrontationServlet extends HttpServlet {
 
@@ -32,13 +30,6 @@ public class ViewConfrontationServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        prepareRequestParam(request);
         request.getRequestDispatcher(WebPath.CONFRONTATION_LIST_VIEW).forward(request, response);
     }
-
-    private void prepareRequestParam(HttpServletRequest request) {
-        List<ConfrontationEntity> list = confrontationService.getAllConfrontation();
-        request.setAttribute("confrontationList", list);
-    }
-
 }

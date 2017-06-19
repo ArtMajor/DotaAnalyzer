@@ -17,9 +17,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-/**
- * Created by fomenko on 16.06.2017.
- */
+
 @WebServlet(name = "JsonConfrontationServlet", urlPatterns = "/confrontationsEdit")
 public class JsonConfrontationServlet extends HttpServlet {
 

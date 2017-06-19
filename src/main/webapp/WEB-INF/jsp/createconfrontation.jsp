@@ -1,6 +1,8 @@
 <%@include file="/WEB-INF/jspf/page.jspf" %>
 <%@include file="/WEB-INF/jspf/taglib.jspf" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="my" %>
+<fmt:setLocale value="${locale}"/>
+<fmt:bundle basename="i18n">
 <html>
 <head>
     <title>Create confrontation | DotA Analyzer</title>
@@ -43,3 +45,4 @@
 <script src="js/loadDataAjax.js"></script>
 </body>
 </html>
+</fmt:bundle>

@@ -12,9 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by fomenko on 16.06.2017.
- */
+
 public class ConfrontationDaoImpl implements ConfrontationDao {
 
     public int createConfrontation(ConfrontationEntity entity) {
@@ -43,7 +41,7 @@ public class ConfrontationDaoImpl implements ConfrontationDao {
         return false;
     }
 
-    public boolean updateContforntation(ConfrontationEntity entity) {
+    public boolean updateConfrontation(ConfrontationEntity entity) {
         return false;
     }
 

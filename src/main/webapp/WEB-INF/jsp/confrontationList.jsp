@@ -1,6 +1,8 @@
 <%@include file="/WEB-INF/jspf/page.jspf" %>
 <%@include file="/WEB-INF/jspf/taglib.jspf" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="my" %>
+<fmt:setLocale value="${locale}"/>
+<fmt:bundle basename="i18n">
 <html>
 <head>
     <title>Confrontations | DotA Analyzer</title>
@@ -32,13 +34,13 @@
 
                     </div>
                     <div class="button-block">
-                        <button id="analyze" class="btn btn-success btn-large btn-block">Analyze!!!</button>
+                        <button id="analyze" class="btn btn-success btn-large btn-block">Analyze!</button>
                     </div>
                 </div>
             </div>
             <div class="panel panel-primary opponent-panel">
                 <div class="panel-heading">
-                    <h3 class="panel-title">-</h3>
+                    <h3 class="panel-title">Recommended heroes</h3>
                 </div>
                 <div class="panel-body panel-hero">
                     <div class="opponent-hero-container">
@@ -54,3 +56,4 @@
 <script src="js/loadDataFromServlet.js"></script>
 </body>
 </html>
+</fmt:bundle>

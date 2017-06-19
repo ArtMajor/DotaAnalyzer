@@ -5,9 +5,7 @@ import ua.nure.babenko.dotaanalyzer.db.entity.ConfrontationEntity;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * Created by fomenko on 16.06.2017.
- */
+
 public class ConfrontationMapper {
     public ConfrontationEntity getConfrontation(HttpServletRequest request){
         ConfrontationEntity confrontation = new ConfrontationEntity();

@@ -8,6 +8,9 @@
          version="3.1">
   <display-name>Archetype Created Web Application</display-name>
   <description>MySQL</description>
+  <welcome-file-list>
+    <welcome-file>/confrontationList</welcome-file>
+  </welcome-file-list>
   <context-param>
     <param-name>javax.faces.CONFIG_FILES</param-name>
     <param-value>/META-INF/context.xml</param-value>
@@ -27,5 +30,16 @@
     <res-type>javax.sql.DataSource</res-type>
     <res-auth>Container</res-auth>
   </resource-ref>
-
+  <filter>
+    <filter-name>LocaleFilter</filter-name>
+    <filter-class>ua.nure.babenko.dotaanalyzer.web.filters.LocalizationFilter</filter-class>
+    <init-param>
+      <param-name>locales</param-name>
+      <param-value>en ru uk</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>LocaleFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
